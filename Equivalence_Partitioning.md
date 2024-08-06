@@ -52,7 +52,7 @@ You are tasked with testing a registration form that has the following input fie
 | Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
 |-------------|---------------------------|----------------------------|
 | Age         |                           |                            |
-
+                18-120yrs                     <18 >120, non numeric
 ### Task 2: Identify Equivalence Classes for Email
 1. Identify the valid equivalence classes for the Email field.
 2. Identify the invalid equivalence classes for the Email field.
@@ -60,8 +60,8 @@ You are tasked with testing a registration form that has the following input fie
 
 | Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
 |-------------|---------------------------|----------------------------|
-| Email       |                           |                            |
-
+| Email       |                         |                            |
+                a name before @, an @ symbol, a domain.com of some sort         invalid is anything missing an @, anything missing a user, anything missing a domain
 ### Task 3: Identify Equivalence Classes for Password
 1. Identify the valid equivalence classes for the Password field.
 2. Identify the invalid equivalence classes for the Password field.
@@ -70,7 +70,7 @@ You are tasked with testing a registration form that has the following input fie
 | Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
 |-------------|---------------------------|----------------------------|
 | Password    |                           |                            |
-
+                b/w 8-20 char incl, 1 or more upper, lower letters and digit.     invalid is longer or shorter than 20 / 80 chars. and is missingany of lower, upper or digits
 ### Task 4: Discuss and Share
 1. Discuss your findings with your group.
 2. Be prepared to share your approach and results with the class.

@@ -37,13 +37,13 @@ You are tasked with testing a search functionality that allows users to specify 
 3. Fill in the table below with the identified boundary values.
 
 | Boundary Values |
-|-----------------|
-|                 |
-|                 |
-|                 |
-|                 |
-|                 |
-
+|-----------------| values b/w 1-100 inclusive.
+|        0, 1, 2  | whole integers, no decimals
+|       99        | no negative values
+|      100          | definitely numerical values
+|      101         | type integer, not string
+|        -1        |
+ non numericals
 ### Task 2: Design Test Cases
 1. Design test cases to cover the identified boundary values.
 2. Ensure that your test cases cover both valid and invalid scenarios.
@@ -51,12 +51,12 @@ You are tasked with testing a search functionality that allows users to specify 
 
 | Test Case | Input Value | Expected Result |
 |-----------|-------------|-----------------|
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
-
+|      0    |             |   error              |
+|   1 or 2  |             |   1 or 2 results              |
+| 99 or 100 |             |           99 or 100 results     |
+|    101    |             |          error        |
+|  -1       |             |            error     |
+   letters                  error
 ### Task 3: Discuss and Share
 1. Discuss your boundary values and test cases with your group.
 2. Be prepared to share your approach and findings with the class.
